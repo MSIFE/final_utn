@@ -1,0 +1,30 @@
+<div class="container" style="margin: 100px auto;">
+
+    <div class="row">
+        <div class="col-6 offset-3">
+            <h4>Agregar programa</h4>
+
+            <form action="/admin/gallery/nuevo" method="post" enctype="multipart/form-data">
+                <div class="mb-3 row">
+                    <input type="text" name="titulo" placeholder="Titulo" class="form-control">
+                </div>
+                <div class="mb-3 row">
+                    <textarea type="text" name="info" placeholder="Descripcion" class="form-control"></textarea>
+                </div>
+                <div class="mb-3 row">
+                    <input type="text" name="precio" placeholder="Precio" class="form-control">
+                </div>
+                <div class="mb-3 row">
+                    <label>Imagen: <input type="file" class="form-control" name="imagen" id="imagen"/></label>
+                </div>
+                <button type="submit" class="btn btn-primary">Guardar</button>
+            </form>
+
+            {{#if error}}
+            <p> {{message}} </p>
+            {{/if}}
+        </div>
+    </div>
+
+
+</div>

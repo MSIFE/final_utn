@@ -1,0 +1,33 @@
+<div class="container" style="margin: 50px auto;">
+    <div class="row">
+        <div class="offset-3">
+            <h4>Modificar</h4>
+            <form method="post" action="/admin/gallery/modificar" enctype="multipart/form-data">
+                <input type="hidden" value="{{gallery.id_pro}}" name="id_pro">
+                <div class="form-group">
+                    <input type="text" value="{{gallery.titulo}}" class="form-control" name="titulo">
+                </div>
+                <div class="form-group">
+                    <textarea name="info" class="form-control">{{gallery.info}}</textarea>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="precio" value="{{gallery.precio}}">
+                </div>
+ <div class="form-group">
+    <p>
+        <label> Imagen: <input class="form-group" type="file" name="imagen" id="imagen"></label>
+    </p>
+    <p>
+        <label><input type="checkbox" name="img_delete" id="img_delete" value="1">Eliminar imagen?</label>
+        <input type="hidden" name="img_original" value="{{gallery.img_id}}">
+    </p>
+ </div>
+
+                <button type="submit" class="btn btn-primary">Modificar</button>
+            </form>
+            {{#if error}}
+            <p> {{message}} </p>
+            {{/if}}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,342 @@
+*{
+  box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+li{ font-size: 1.25em;}
+
+button{
+  font-size: 1.25em;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: 2px solid rgba(0,0,0,0.3);
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+  color: white;
+  background-color: blueviolet;
+}
+
+button:hover{
+  background-color: rgb(101, 33, 165);
+}
+
+.container{
+  max-width: 1400px;
+  margin: auto;
+}
+
+.color-acento{ color:blueviolet; }
+
+header{
+  background-color: rgb(245,245,245);
+  
+}
+
+header .logo{
+  margin: 0;
+  padding: 25px 30px;
+  font-weight: bold;
+  color: blueviolet;
+  font-size: 1.6em;
+}
+
+header .container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+a{
+  padding: 5px 12px;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+a:hover{
+  color: blueviolet;
+}
+
+
+
+#hero{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 90vh;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+  );
+
+}
+
+
+
+#hero h1{
+  color: white;
+}
+
+#hero button{
+  font-size: 1.75em;
+}
+
+
+
+
+#somos-proya .container{
+  text-align: center;
+  padding: 200px 12px;
+}
+
+#nuestros-programas{
+  background-color: rgb(30,30,30);
+  color: white;
+  text-align: center;
+}
+
+#nuestros-programas .container{
+  padding: 150px 12px;
+}
+
+#nuestros-programas h2{
+  margin-top: 0;
+  font-size: 3.2em;
+}
+
+#nuestros-programas p{
+  display: none;
+}
+
+#nuestros-programas .carta{
+  background-position: center center;
+  background-size: cover;
+  padding: 50px 0px;
+  margin: 30px;
+  border-radius: 15px;
+}
+
+.carta:first-child{
+  background-image: linear-gradient(
+      0deg,
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+  )
+ ;
+
+}
+
+.carta:nth-child(2){
+  background-image: linear-gradient(
+      0deg,
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+  )
+;
+}
+
+.carta:nth-child(3){
+  background-image: linear-gradient(
+      0deg,
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+  )
+  ;
+
+}
+
+
+#caracteristicas{
+  
+  background-repeat: no-repeat;
+  background-size: 500px 400px;
+  background-position: calc(100vw - 500px) 120px;
+}
+
+
+#caracteristicas ul{
+  margin-left: 100px;
+}
+
+
+#caracteristicas .container{
+  text-align: center;
+  padding: 250px 12px;
+}
+
+#caracteristicas li{
+  margin: 16px 0px;
+  font-weight: bold;
+}
+
+#somos-proya .container{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#somos-proya .texto{
+  width: 50%;
+  max-width: 600px;
+  text-align: initial;
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#somos-proya h2{
+  margin-top: 0px;
+}
+
+#somos-proya .img-container{
+  background-size: cover;
+  background-position: center center;
+  height: 500px;
+  width: 400px; 
+}
+
+
+/* LOGIN */
+.center h1{
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid silver;
+}
+.center form{
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+form .txt_field{
+  position: relative;
+  border-bottom: 2px solid #adadad;
+  margin: 30px 0;
+ 
+}
+.txt_field input{
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+}
+.txt_field label{
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: #adadad;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  transition: .5s;
+}
+.txt_field span::before{
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: rgb(139, 67, 206);
+  transition: .5s;
+}
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label{
+  top: -5px;
+  color: #2691d9;
+}
+.txt_field input:focus ~ span::before,
+.txt_field input:valid ~ span::before{
+  width: 100%;
+}
+.pass{
+  margin: -5px 0 20px 5px;
+  color: #a6a6a6;
+  cursor: pointer;
+}
+.pass:hover{
+  text-decoration: underline;
+}
+
+.btna {
+  display: flex;
+  justify-content: center;
+  
+} 
+
+.btn-box{
+  display: flex;
+  justify-content: center;
+}
+
+input[type="submit"]{
+
+  width: 55%;
+  height: 50px;
+  border: 1px solid;
+  background: blueviolet;
+  border-radius: 25px;
+  font-size: 18px;
+  color: #e9f4fb;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+}
+input[type="submit"]:hover{
+  border-color: rgb(48, 4, 88);
+  transition: .5s;
+}
+.signup_link{
+  margin: 30px 0;
+  text-align: center;
+  font-size: 16px;
+  color: #666666;
+}
+.signup_link a{
+  color: #2691d9;
+  text-decoration: none;
+}
+.signup_link a:hover{
+  text-decoration: underline;
+}
+
+.error {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: #adadad;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  transition: .5s;
+}
+
